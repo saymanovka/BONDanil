@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="src/style.css">
+    <title>Scheduler</title>
+</head>
+<body class="bg-gray-200 flex justify-center items-center h-screen w-screen">
+    <div class="container bg-red-100">
+        <div class="flex flex-row bg-white items-center">
+            <div class="app-bg-blue-1 px-10 py-5">
+                <a href="index.html"><span class="text-lg text-white font-bold uppercase">Coursor</span></a>
+            </div>
+            <div class="flex flex-row pl-5 items-center">
+                <div class="h-9 w-9 bg-yellow-400 border-solid border-4 border-blue-600 rounded-xl">
+                </div>
+                <div class="flex flex-col pl-5">
+                    <span class="font-semibold text-sm app-color-black" id="lectorName">
+                        <!-- StudentName -->
+                    </span>
+                    <span class="font-semibold text-xs app-color-gray-1" id="lectorPhone">
+                        <!-- Group -->
+                    </span>
+                </div>
+                <div class="w-px bg-gray-100 h-10 ml-5">
+                </div>
+            </div>  
+            <div class="flex flex-row pl-5 items-center">
+                <div class="h-9 w-9 app-bg-blue-2 flex justify-center items-center rounded-xl">
+                    <svg class="w-6 h-6 app-color-blue-1" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"></path>
+                    </svg>
+                </div>
+                <div class="flex flex-col pl-5">
+                    <span class="font-semibold text-sm app-color-black">Сьогодні</span>
+                    <span class="font-semibold text-sm app-color-blue-1" id="date">DateTime</span>
+                </div>
+            </div>                          
+        </div>
+        <div class="flex flex-col app-bg-white-1 px-12 pb-10">
+            <div class="flex flex-row justify-center py-5">
+                <span class="text-lg font-bold app-color-black">
+                    РОЗКЛАД
+                </span>
+            </div>
+            <div class="flex flex-row bg-white p-10">
+                <table class="w-full" id="scheduleId">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th class="text-left text-xs app-color-black pb-5">ПОНЕДІЛОК</th>
+                            <th class="text-left text-xs app-color-black pb-5">ВІВТОРОК</th>
+                            <th class="text-left text-xs app-color-black pb-5">СЕРЕДА</th>
+                            <th class="text-left text-xs app-color-black pb-5">ЧЕТВЕР</th>
+                            <th class="text-left text-xs app-color-black pb-5">П'ЯТНИЦЯ</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="app-border-1 hover:bg-gray-100">
+                            <td>
+                                <div class="flex justify-center items-center">
+                                    <svg class="w-6 h-6 app-color-blue-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5"></path>
+                                      </svg>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="flex justify-center items-center rounded-md m-5 h-10 app-bg-yellow-2 app-color-yellow-1 text-md font-semibold">
+                                    1 Пара
+                                </div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="app-border-1 hover:bg-gray-100">
+                            <td>
+                                <div class="flex justify-center items-center">
+                                    <svg class="w-6 h-6 app-color-blue-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5"></path>
+                                      </svg>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="flex justify-center items-center rounded-md m-5 h-10 app-bg-yellow-2 app-color-yellow-1 text-md font-semibold">
+                                    2 Пара
+                                </div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="app-border-1 hover:bg-gray-100">
+                            <td>
+                                <div class="flex justify-center items-center">
+                                    <svg class="w-6 h-6 app-color-blue-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5"></path>
+                                      </svg>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="flex justify-center items-center rounded-md m-5 h-10 app-bg-yellow-2 app-color-yellow-1 text-md font-semibold">
+                                    3 Пара
+                                </div>
+                            </td>
+                            <td>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="app-border-1 hover:bg-gray-100">
+                            <td>
+                                <div class="flex justify-center items-center">
+                                    <svg class="w-6 h-6 app-color-blue-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5"></path>
+                                      </svg>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="flex justify-center items-center rounded-md m-5 h-10 app-bg-yellow-2 app-color-yellow-1 text-md font-semibold">
+                                    4 Пара
+                                </div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script type="module" src="js/lector.js"></script>    
+</body>
+</html>

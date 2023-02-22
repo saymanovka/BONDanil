@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="src/style.css">
+    <title>Scheduler</title>
+</head>
+<body class="bg-gray-200 flex justify-center items-center h-screen w-screen">
+<div class="container bg-red-100">
+    <div class="flex flex-row bg-white items-center">
+        <div class="app-bg-blue-1 px-10 py-5">
+            <a href="index.html"><span class="text-lg text-white font-bold uppercase">Coursor</span></a>
+        </div>
+
+        <div class="flex flex-row pl-5 items-center">
+            <div class="h-9 w-9 app-bg-blue-2 flex justify-center items-center rounded-xl">
+                <svg class="w-6 h-6 app-color-blue-1" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"></path>
+                </svg>
+            </div>
+            <div class="flex flex-col pl-5">
+                <span class="font-semibold text-sm app-color-black">Сьогодні</span>
+                <span class="font-semibold text-sm app-color-blue-1" id="date">DateTime</span>
+        </div>
+        </div>
+    </div>
+    <div class="flex flex-col app-bg-white-1 px-12 pb-10">
+        <div class="flex flex-row justify-center py-5">
+                <span class="text-lg uppercase font-bold app-color-black">
+                    Інформація про викладачів
+                </span>
+        </div>
+        <div class="flex flex-row bg-white p-10">
+            <table class="w-full" id="statTable">
+                <thead>
+                <tr>
+                    <th class="text-left text-md app-color-black pb-5">ID</th>
+                    <th class="text-left text-md app-color-black pb-5">ПІБ Викладача</th>
+                    <th class="text-left text-md app-color-black pb-5">Номер телефона</th>
+                    <th class="text-left text-md app-color-black pb-5">Адреса</th>
+                    <th class="text-left text-md app-color-black pb-5">Години</th>
+                    <th class="text-left text-md app-color-black pb-5">За годину</th>
+                    <th class="text-left text-md app-color-black pb-5">Всього</th>
+
+                </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-300">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+<script src="js/admin.js"></script>
+</body>
+</html>

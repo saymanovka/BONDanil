@@ -1,0 +1,10 @@
+{
+    "students" : [
+            {"studentId":5,"name":"Микита Труфанов","phone":"12359632","address":"Харків","group":{"groupId":3,"name":"Перша группа","faculty":{"facultyId":1,"name":"Грифиндор"}}},
+            {"studentId":6,"name":"Олег Сергеєв","phone":"23145813","address":"Київ","group":{"groupId":4,"name":"Друга группа","faculty":{"facultyId":2,"name":"Пуффендуй"}}},
+            {"studentId":7,"name":"Максим Ходак","phone":"92340224","address":"Львів","group":{"groupId":3,"name":"Перша группа","faculty":{"facultyId":1,"name":"Грифиндор"}}},
+            {"studentId":8,"name":"Дмитро Денисенко","phone":"12390123","address":"Житомир","group":{"groupId":4,"name":"Друга группа","faculty":{"facultyId":2,"name":"Пуффендуй"}}},
+            {"studentId":9,"name":"Данил Шаповалов","phone":"934913795","address":"Вінниця","group":{"groupId":3,"name":"Перша группа","faculty":{"facultyId":1,"name":"Грифиндор"}}},
+            {"studentId":10,"name":"Володимир Білий","phone":"23347920","address":"Дніпро","group":{"groupId":3,"name":"Перша группа","faculty":{"facultyId":1,"name":"Грифиндор"}}}
+    ]
+}
